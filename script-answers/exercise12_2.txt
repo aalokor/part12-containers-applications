@@ -1,0 +1,7 @@
+aalo@Roderick:~/projects/part12-containers-applications$ docker run -it ubuntu bash
+
+root@993fa8772e57:/# mkdir -p /usr/src/app
+
+root@993fa8772e57:/# touch /usr/src/app/index.js
+
+root@993fa8772e57:/# exit
