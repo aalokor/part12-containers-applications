@@ -1,0 +1,1515 @@
+aalo@Roderick:~/projects/part12-containers-applications$ docker start -i gallant_johnson
+
+root@993fa8772e57:/# apt-get -y install curl
+
+root@993fa8772e57:/# curl -sL https://deb.nodesource.com/setup_20.x | bash
+
+root@993fa8772e57:/# apt install -y nodejs
+
+root@993fa8772e57:/# node /usr/src/app/index.js
+Hello World
+
+root@993fa8772e57:/# exit
+
+(script)
+Script started on 2026-02-15 13:28:13+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+Command 'nvm' not found, but there are 14 similar ones.
+[?2004h]0;aalo@Roderick: ~/projects/part12-containers-applications[01;32maalo@Roderick[00m:[01;34m~/projects/part12-containers-applications[00m$ exitdocker start -i gallant_johnson
+[?2004l
+[?2004h]0;root@993fa8772e57: /root@993fa8772e57:/# apt-get -y install curl
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 62%
+
+Reading package lists... 62%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 85%
+
+Reading package lists... 85%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 98%
+
+Reading state information... Done
+
+The following additional packages will be installed:
+  ca-certificates krb5-locales libbrotli1 libcurl4t64 libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-common libldap2 libnghttp2-14 libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh-4 libssl3t64 openssl publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap
+  libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  ca-certificates curl krb5-locales libbrotli1 libcurl4t64 libgssapi-krb5-2 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-common libldap2 libnghttp2-14 libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh-4 openssl publicsuffix
+The following packages will be upgraded:
+  libssl3t64
+1 upgraded, 21 newly installed, 0 to remove and 3 not upgraded.
+Need to get 5513 kB of archives.
+After this operation, 9219 kB of additional disk space will be used.
+
+0% [Working]
+            
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssl3t64 amd64 3.0.13-0ubuntu3.7 [1942 kB]
+
+0% [1 libssl3t64 1126 B/1942 kB 0%]
+4% [1 libssl3t64 280 kB/1942 kB 14%]
+                                    
+29% [Working]
+             
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 openssl amd64 3.0.13-0ubuntu3.7 [1003 kB]
+
+29% [2 openssl 6807 B/1003 kB 1%]
+                                 
+45% [Waiting for headers]
+                         
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 ca-certificates all 20240203 [159 kB]
+
+45% [3 ca-certificates 21.6 kB/159 kB 14%]
+                                          
+48% [Waiting for headers]
+                         
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 krb5-locales all 1.20.1-6ubuntu2.6 [14.8 kB]
+
+48% [4 krb5-locales 14.8 kB/14.8 kB 100%]
+                                         
+49% [Working]
+             
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libkrb5support0 amd64 1.20.1-6ubuntu2.6 [34.4 kB]
+
+49% [5 libkrb5support0 13.5 kB/34.4 kB 39%]
+                                           
+50% [Waiting for headers]
+                         
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libk5crypto3 amd64 1.20.1-6ubuntu2.6 [82.0 kB]
+
+51% [6 libk5crypto3 15.9 kB/82.0 kB 19%]
+                                        
+52% [Waiting for headers]
+                         
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libkeyutils1 amd64 1.6.3-3build1 [9490 B]
+
+52% [7 libkeyutils1 2005 B/9490 B 21%]
+                                      
+53% [Working]
+             
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libkrb5-3 amd64 1.20.1-6ubuntu2.6 [348 kB]
+
+54% [8 libkrb5-3 3583 B/348 kB 1%]
+                                  
+59% [Working]
+             
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libgssapi-krb5-2 amd64 1.20.1-6ubuntu2.6 [143 kB]
+
+60% [9 libgssapi-krb5-2 9077 B/143 kB 6%]
+                                         
+62% [Waiting for headers]
+                         
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libnghttp2-14 amd64 1.59.0-1ubuntu0.2 [74.3 kB]
+
+62% [10 libnghttp2-14 1122 B/74.3 kB 2%]
+                                        
+64% [Waiting for headers]
+                         
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 libpsl5t64 amd64 0.21.2-1.1build1 [57.1 kB]
+
+64% [11 libpsl5t64 6334 B/57.1 kB 11%]
+                                      
+66% [Waiting for headers]
+                         
+Get:12 http://archive.ubuntu.com/ubuntu noble/main amd64 publicsuffix all 20231001.0357-0.1 [129 kB]
+
+66% [12 publicsuffix 3968 B/129 kB 3%]
+                                      
+69% [Waiting for headers]
+                         
+Get:13 http://archive.ubuntu.com/ubuntu noble/main amd64 libbrotli1 amd64 1.1.0-2build2 [331 kB]
+
+69% [13 libbrotli1 3968 B/331 kB 1%]
+                                    
+75% [Waiting for headers]
+                         
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-modules-db amd64 2.1.28+dfsg1-5ubuntu3.1 [20.4 kB]
+
+75% [14 libsasl2-modules-db 19.4 kB/20.4 kB 95%]
+                                                
+76% [Waiting for headers]
+                         
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-2 amd64 2.1.28+dfsg1-5ubuntu3.1 [53.2 kB]
+
+76% [15 libsasl2-2 1564 B/53.2 kB 3%]
+                                     
+77% [Waiting for headers]
+                         
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libldap2 amd64 2.6.10+dfsg-0ubuntu0.24.04.1 [198 kB]
+
+78% [16 libldap2 13.6 kB/198 kB 7%]
+                                   
+81% [Waiting for headers]
+                         
+Get:17 http://archive.ubuntu.com/ubuntu noble/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build7 [56.3 kB]
+
+82% [17 librtmp1 16.6 kB/56.3 kB 29%]
+                                     
+83% [Waiting for headers]
+                         
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libssh-4 amd64 0.10.6-2ubuntu0.2 [188 kB]
+
+83% [18 libssh-4 12.6 kB/188 kB 7%]
+                                   
+87% [Waiting for headers]
+                         
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.6 [341 kB]
+
+87% [19 libcurl4t64 22.1 kB/341 kB 6%]
+                                      
+92% [Waiting for headers]
+                         
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.6 [226 kB]
+
+93% [20 curl 20.9 kB/226 kB 9%]
+                               
+97% [Waiting for headers]
+                         
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libldap-common all 2.6.10+dfsg-0ubuntu0.24.04.1 [32.9 kB]
+
+97% [21 libldap-common 14.8 kB/32.9 kB 45%]
+                                           
+98% [Waiting for headers]
+                         
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsasl2-modules amd64 2.1.28+dfsg1-5ubuntu3.1 [69.9 kB]
+
+98% [22 libsasl2-modules 8229 B/69.9 kB 12%]
+                                            
+100% [Working]
+              
+Fetched 5513 kB in 2s (3504 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4454 files and directories currently installed.)
+Preparing to unpack .../libssl3t64_3.0.13-0ubuntu3.7_amd64.deb ...
+Unpacking libssl3t64:amd64 (3.0.13-0ubuntu3.7) over (3.0.13-0ubuntu3.6) ...
+Setting up libssl3t64:amd64 (3.0.13-0ubuntu3.7) ...
+Selecting previously unselected package openssl.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4454 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.13-0ubuntu3.7_amd64.deb ...
+Unpacking openssl (3.0.13-0ubuntu3.7) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20240203_all.deb ...
+Unpacking ca-certificates (20240203) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../02-krb5-locales_1.20.1-6ubuntu2.6_all.deb ...
+Unpacking krb5-locales (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../03-libkrb5support0_1.20.1-6ubuntu2.6_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../04-libk5crypto3_1.20.1-6ubuntu2.6_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../05-libkeyutils1_1.6.3-3build1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6.3-3build1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../06-libkrb5-3_1.20.1-6ubuntu2.6_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../07-libgssapi-krb5-2_1.20.1-6ubuntu2.6_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../08-libnghttp2-14_1.59.0-1ubuntu0.2_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.59.0-1ubuntu0.2) ...
+Selecting previously unselected package libpsl5t64:amd64.
+Preparing to unpack .../09-libpsl5t64_0.21.2-1.1build1_amd64.deb ...
+Unpacking libpsl5t64:amd64 (0.21.2-1.1build1) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../10-publicsuffix_20231001.0357-0.1_all.deb ...
+Unpacking publicsuffix (20231001.0357-0.1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../11-libbrotli1_1.1.0-2build2_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.1.0-2build2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../12-libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../13-libsasl2-2_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Selecting previously unselected package libldap2:amd64.
+Preparing to unpack .../14-libldap2_2.6.10+dfsg-0ubuntu0.24.04.1_amd64.deb ...
+Unpacking libldap2:amd64 (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../15-librtmp1_2.4+20151223.gitfa8646d.1-2build7_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build7) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../16-libssh-4_0.10.6-2ubuntu0.2_amd64.deb ...
+Unpacking libssh-4:amd64 (0.10.6-2ubuntu0.2) ...
+Selecting previously unselected package libcurl4t64:amd64.
+Preparing to unpack .../17-libcurl4t64_8.5.0-2ubuntu10.6_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.6) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../18-curl_8.5.0-2ubuntu10.6_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.6) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../19-libldap-common_2.6.10+dfsg-0ubuntu0.24.04.1_all.deb ...
+Unpacking libldap-common (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../20-libsasl2-modules_2.1.28+dfsg1-5ubuntu3.1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Setting up libkeyutils1:amd64 (1.6.3-3build1) ...
+Setting up libbrotli1:amd64 (1.1.0-2build2) ...
+Setting up libsasl2-modules:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Setting up libpsl5t64:amd64 (0.21.2-1.1build1) ...
+Setting up libnghttp2-14:amd64 (1.59.0-1ubuntu0.2) ...
+Setting up krb5-locales (1.20.1-6ubuntu2.6) ...
+Setting up libldap-common (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+Setting up libkrb5support0:amd64 (1.20.1-6ubuntu2.6) ...
+Setting up libsasl2-modules-db:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build7) ...
+Setting up libk5crypto3:amd64 (1.20.1-6ubuntu2.6) ...
+Setting up libsasl2-2:amd64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Setting up libkrb5-3:amd64 (1.20.1-6ubuntu2.6) ...
+Setting up openssl (3.0.13-0ubuntu3.7) ...
+Setting up publicsuffix (20231001.0357-0.1) ...
+Setting up libldap2:amd64 (2.6.10+dfsg-0ubuntu0.24.04.1) ...
+Setting up ca-certificates (20240203) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+146 added, 0 removed; done.
+Setting up libgssapi-krb5-2:amd64 (1.20.1-6ubuntu2.6) ...
+Setting up libssh-4:amd64 (0.10.6-2ubuntu0.2) ...
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.6) ...
+Setting up curl (8.5.0-2ubuntu10.6) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+Processing triggers for ca-certificates (20240203) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+[?2004h]0;root@993fa8772e57: /root@993fa8772e57:/# [7mcurl -sL https://deb.nodesource.com/setup_20.x | bash[27m
+]0;root@993fa8772e57: /root@993fa8772e57:/# curl -sL https://deb.nodesource.com/setup_20.x | bash
+[?2004l
+[38;5;79m2026-02-15 11:28:58 - Installing pre-requisites[0m
+[33m
+0% [Working][0m
+            
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+[33m
+0% [Connecting to archive.ubuntu.com (91.189.91.82)][0m[33m
+                                                    
+0% [Waiting for headers][0m
+                        
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+[33m
+                        
+0% [Working][0m[33m
+0% [Waiting for headers][0m
+                        
+Hit:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+[33m
+                        
+0% [Working][0m[33m
+0% [Waiting for headers][0m
+                        
+Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+[33m
+                        
+0% [Working][0m[33m
+20% [Working][0m
+             
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 51%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 62%
+
+Reading package lists... 62%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 85%
+
+Reading package lists... 85%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 4%
+
+Reading state information... Done
+
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 57%
+
+Reading package lists... 62%
+
+Reading package lists... 62%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 85%
+
+Reading package lists... 85%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 4%
+
+Reading state information... Done
+
+ca-certificates is already the newest version (20240203).
+ca-certificates set to manually installed.
+curl is already the newest version (8.5.0-2ubuntu10.6).
+The following additional packages will be installed:
+  adduser dirmngr gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpgconf gpgsm keyboxd libksba8 libreadline8t64
+  libsqlite3-0 pinentry-curses readline-common
+Suggested packages:
+  liblocale-gettext-perl perl cron quota ecryptfs-utils dbus-user-session libpam-systemd pinentry-gnome3 tor
+  parcimonie xloadimage gpg-wks-server scdaemon pinentry-doc readline-doc
+The following NEW packages will be installed:
+  adduser apt-transport-https dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpgconf gpgsm keyboxd
+  libksba8 libreadline8t64 libsqlite3-0 pinentry-curses readline-common
+0 upgraded, 17 newly installed, 0 to remove and 3 not upgraded.
+Need to get 3307 kB of archives.
+After this operation, 8328 kB of additional disk space will be used.
+[33m
+0% [Working][0m
+            
+Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 adduser all 3.137ubuntu1 [101 kB]
+[33m
+0% [1 adduser 8228 B/101 kB 8%][0m[33m
+                               
+4% [Working][0m
+            
+Get:2 http://archive.ubuntu.com/ubuntu noble/main amd64 readline-common all 8.2-4build1 [56.5 kB]
+[33m
+4% [2 readline-common 1130 B/56.5 kB 2%][0m[33m
+                                        
+6% [Waiting for headers][0m
+                        
+Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libreadline8t64 amd64 8.2-4build1 [153 kB]
+[33m
+6% [3 libreadline8t64 1334 B/153 kB 1%][0m[33m
+                                       
+11% [Waiting for headers][0m
+                         
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libsqlite3-0 amd64 3.45.1-1ubuntu2.5 [701 kB]
+[33m
+11% [4 libsqlite3-0 26 B/701 kB 0%][0m[33m
+                                   
+29% [Waiting for headers][0m
+                         
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 apt-transport-https all 2.8.3 [3970 B]
+[33m
+29% [5 apt-transport-https 1524 B/3970 B 38%][0m[33m
+                                             
+30% [Waiting for headers][0m
+                         
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpgconf amd64 2.4.4-2ubuntu17.4 [104 kB]
+[33m
+31% [6 gpgconf 3102 B/104 kB 3%][0m[33m
+                                
+34% [Waiting for headers][0m
+                         
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 libksba8 amd64 1.6.6-1build1 [122 kB]
+[33m
+34% [7 libksba8 4096 B/122 kB 3%][0m[33m
+                                 
+38% [Waiting for headers][0m
+                         
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 dirmngr amd64 2.4.4-2ubuntu17.4 [323 kB]
+[33m
+38% [8 dirmngr 4326 B/323 kB 1%][0m[33m
+                                
+47% [Waiting for headers][0m
+                         
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gnupg-utils amd64 2.4.4-2ubuntu17.4 [109 kB]
+[33m
+47% [9 gnupg-utils 4096 B/109 kB 4%][0m[33m
+                                    
+51% [Waiting for headers][0m
+                         
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpg amd64 2.4.4-2ubuntu17.4 [565 kB]
+[33m
+51% [10 gpg 10.1 kB/565 kB 2%][0m[33m
+                              
+66% [Waiting for headers][0m
+                         
+Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 pinentry-curses amd64 1.2.1-3ubuntu5 [35.2 kB]
+[33m
+66% [11 pinentry-curses 12.7 kB/35.2 kB 36%][0m[33m
+                                            
+68% [Waiting for headers][0m
+                         
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpg-agent amd64 2.4.4-2ubuntu17.4 [227 kB]
+[33m
+68% [12 gpg-agent 8592 B/227 kB 4%][0m[33m
+                                   
+75% [Waiting for headers][0m
+                         
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpgsm amd64 2.4.4-2ubuntu17.4 [232 kB]
+[33m
+75% [13 gpgsm 10.4 kB/232 kB 4%][0m[33m
+                                
+81% [Waiting for headers][0m
+                         
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 keyboxd amd64 2.4.4-2ubuntu17.4 [78.3 kB]
+[33m
+82% [14 keyboxd 12.9 kB/78.3 kB 17%][0m[33m
+                                    
+84% [Waiting for headers][0m
+                         
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gnupg all 2.4.4-2ubuntu17.4 [359 kB]
+[33m
+85% [15 gnupg 8863 B/359 kB 2%][0m[33m
+                               
+94% [Waiting for headers][0m
+                         
+Get:16 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gnupg-l10n all 2.4.4-2ubuntu17.4 [66.4 kB]
+[33m
+95% [16 gnupg-l10n 21.1 kB/66.4 kB 32%][0m[33m
+                                       
+97% [Waiting for headers][0m
+                         
+Get:17 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 gpg-wks-client amd64 2.4.4-2ubuntu17.4 [70.8 kB]
+[33m
+97% [17 gpg-wks-client 8566 B/70.8 kB 12%][0m[33m
+                                          
+100% [Working][0m
+              
+Fetched 3307 kB in 1s (2585 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1ASelecting previously unselected package adduser.
+
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5087 files and directories currently installed.)
+
+Preparing to unpack .../adduser_3.137ubuntu1_all.deb ...
+
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [  1%][49m[39m [#.................................................................................................] 8Unpacking adduser (3.137ubuntu1) ...
+
+7[30;0f[42m[30mProgress: [  3%][49m[39m [##................................................................................................] 8Setting up adduser (3.137ubuntu1) ...
+
+7[30;0f[42m[30mProgress: [  4%][49m[39m [####..............................................................................................] 87[30;0f[42m[30mProgress: [  6%][49m[39m [#####.............................................................................................] 8Selecting previously unselected package readline-common.
+
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5135 files and directories currently installed.)
+
+Preparing to unpack .../00-readline-common_8.2-4build1_all.deb ...
+
+7[30;0f[42m[30mProgress: [  7%][49m[39m [#######...........................................................................................] 8Unpacking readline-common (8.2-4build1) ...
+
+7[30;0f[42m[30mProgress: [  9%][49m[39m [########..........................................................................................] 8Selecting previously unselected package libreadline8t64:amd64.
+
+Preparing to unpack .../01-libreadline8t64_8.2-4build1_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 10%][49m[39m [#########.........................................................................................] 8Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8 to /lib/x86_64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+
+Adding 'diversion of /lib/x86_64-linux-gnu/libhistory.so.8.2 to /lib/x86_64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8 to /lib/x86_64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+
+Adding 'diversion of /lib/x86_64-linux-gnu/libreadline.so.8.2 to /lib/x86_64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+
+Unpacking libreadline8t64:amd64 (8.2-4build1) ...
+
+7[30;0f[42m[30mProgress: [ 12%][49m[39m [###########.......................................................................................] 8Selecting previously unselected package libsqlite3-0:amd64.
+
+Preparing to unpack .../02-libsqlite3-0_3.45.1-1ubuntu2.5_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 13%][49m[39m [############......................................................................................] 8Unpacking libsqlite3-0:amd64 (3.45.1-1ubuntu2.5) ...
+
+7[30;0f[42m[30mProgress: [ 14%][49m[39m [##############....................................................................................] 8Selecting previously unselected package apt-transport-https.
+
+Preparing to unpack .../03-apt-transport-https_2.8.3_all.deb ...
+
+7[30;0f[42m[30mProgress: [ 16%][49m[39m [###############...................................................................................] 8Unpacking apt-transport-https (2.8.3) ...
+
+7[30;0f[42m[30mProgress: [ 17%][49m[39m [#################.................................................................................] 8Selecting previously unselected package gpgconf.
+
+Preparing to unpack .../04-gpgconf_2.4.4-2ubuntu17.4_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 19%][49m[39m [##################................................................................................] 8Unpacking gpgconf (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 20%][49m[39m [###################...............................................................................] 8Selecting previously unselected package libksba8:amd64.
+
+Preparing to unpack .../05-libksba8_1.6.6-1build1_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 22%][49m[39m [#####################.............................................................................] 8Unpacking libksba8:amd64 (1.6.6-1build1) ...
+
+7[30;0f[42m[30mProgress: [ 23%][49m[39m [######################............................................................................] 8Selecting previously unselected package dirmngr.
+
+Preparing to unpack .../06-dirmngr_2.4.4-2ubuntu17.4_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 25%][49m[39m [########################..........................................................................] 8Unpacking dirmngr (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 26%][49m[39m [#########################.........................................................................] 8Selecting previously unselected package gnupg-utils.
+
+Preparing to unpack .../07-gnupg-utils_2.4.4-2ubuntu17.4_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 28%][49m[39m [##########################........................................................................] 8Unpacking gnupg-utils (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 29%][49m[39m [############################......................................................................] 8Selecting previously unselected package gpg.
+
+Preparing to unpack .../08-gpg_2.4.4-2ubuntu17.4_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 30%][49m[39m [#############################.....................................................................] 8Unpacking gpg (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 32%][49m[39m [###############################...................................................................] 8Selecting previously unselected package pinentry-curses.
+
+Preparing to unpack .../09-pinentry-curses_1.2.1-3ubuntu5_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 33%][49m[39m [################################..................................................................] 8Unpacking pinentry-curses (1.2.1-3ubuntu5) ...
+
+7[30;0f[42m[30mProgress: [ 35%][49m[39m [##################################................................................................] 8Selecting previously unselected package gpg-agent.
+
+Preparing to unpack .../10-gpg-agent_2.4.4-2ubuntu17.4_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 36%][49m[39m [###################################...............................................................] 8Unpacking gpg-agent (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 38%][49m[39m [####################################..............................................................] 8Selecting previously unselected package gpgsm.
+
+Preparing to unpack .../11-gpgsm_2.4.4-2ubuntu17.4_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 39%][49m[39m [######################################............................................................] 8Unpacking gpgsm (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 41%][49m[39m [#######################################...........................................................] 8Selecting previously unselected package keyboxd.
+
+Preparing to unpack .../12-keyboxd_2.4.4-2ubuntu17.4_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 42%][49m[39m [#########################################.........................................................] 8Unpacking keyboxd (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 43%][49m[39m [##########################################........................................................] 8Selecting previously unselected package gnupg.
+
+Preparing to unpack .../13-gnupg_2.4.4-2ubuntu17.4_all.deb ...
+
+7[30;0f[42m[30mProgress: [ 45%][49m[39m [############################################......................................................] 8Unpacking gnupg (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 46%][49m[39m [#############################################.....................................................] 8Selecting previously unselected package gnupg-l10n.
+
+Preparing to unpack .../14-gnupg-l10n_2.4.4-2ubuntu17.4_all.deb ...
+
+7[30;0f[42m[30mProgress: [ 48%][49m[39m [##############################################....................................................] 8Unpacking gnupg-l10n (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 49%][49m[39m [################################################..................................................] 8Selecting previously unselected package gpg-wks-client.
+
+Preparing to unpack .../15-gpg-wks-client_2.4.4-2ubuntu17.4_amd64.deb ...
+
+7[30;0f[42m[30mProgress: [ 51%][49m[39m [#################################################.................................................] 8Unpacking gpg-wks-client (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 52%][49m[39m [###################################################...............................................] 8Setting up libksba8:amd64 (1.6.6-1build1) ...
+
+7[30;0f[42m[30mProgress: [ 54%][49m[39m [####################################################..............................................] 87[30;0f[42m[30mProgress: [ 55%][49m[39m [#####################################################.............................................] 8Setting up pinentry-curses (1.2.1-3ubuntu5) ...
+
+7[30;0f[42m[30mProgress: [ 57%][49m[39m [#######################################################...........................................] 87[30;0f[42m[30mProgress: [ 58%][49m[39m [########################################################..........................................] 8Setting up apt-transport-https (2.8.3) ...
+
+7[30;0f[42m[30mProgress: [ 59%][49m[39m [##########################################################........................................] 87[30;0f[42m[30mProgress: [ 61%][49m[39m [###########################################################.......................................] 8Setting up libsqlite3-0:amd64 (3.45.1-1ubuntu2.5) ...
+
+7[30;0f[42m[30mProgress: [ 62%][49m[39m [#############################################################.....................................] 87[30;0f[42m[30mProgress: [ 64%][49m[39m [##############################################################....................................] 8Setting up gnupg-l10n (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 65%][49m[39m [###############################################################...................................] 87[30;0f[42m[30mProgress: [ 67%][49m[39m [#################################################################.................................] 8Setting up readline-common (8.2-4build1) ...
+
+7[30;0f[42m[30mProgress: [ 68%][49m[39m [##################################################################................................] 87[30;0f[42m[30mProgress: [ 70%][49m[39m [####################################################################..............................] 8Setting up gnupg-utils (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 71%][49m[39m [#####################################################################.............................] 87[30;0f[42m[30mProgress: [ 72%][49m[39m [#######################################################################...........................] 8Setting up libreadline8t64:amd64 (8.2-4build1) ...
+
+7[30;0f[42m[30mProgress: [ 74%][49m[39m [########################################################################..........................] 87[30;0f[42m[30mProgress: [ 75%][49m[39m [#########################################################################.........................] 8Setting up gpgconf (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 77%][49m[39m [###########################################################################.......................] 87[30;0f[42m[30mProgress: [ 78%][49m[39m [############################################################################......................] 8Setting up gpg (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 80%][49m[39m [##############################################################################....................] 87[30;0f[42m[30mProgress: [ 81%][49m[39m [###############################################################################...................] 8Setting up gpg-agent (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 83%][49m[39m [################################################################################..................] 87[30;0f[42m[30mProgress: [ 84%][49m[39m [##################################################################################................] 8Setting up gpgsm (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 86%][49m[39m [###################################################################################...............] 87[30;0f[42m[30mProgress: [ 87%][49m[39m [#####################################################################################.............] 8Setting up dirmngr (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 88%][49m[39m [######################################################################################............] 87[30;0f[42m[30mProgress: [ 90%][49m[39m [########################################################################################..........] 8Setting up keyboxd (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 91%][49m[39m [#########################################################################################.........] 87[30;0f[42m[30mProgress: [ 93%][49m[39m [##########################################################################################........] 8Setting up gnupg (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 94%][49m[39m [############################################################################################......] 87[30;0f[42m[30mProgress: [ 96%][49m[39m [#############################################################################################.....] 8Setting up gpg-wks-client (2.4.4-2ubuntu17.4) ...
+
+7[30;0f[42m[30mProgress: [ 97%][49m[39m [###############################################################################################...] 87[30;0f[42m[30mProgress: [ 99%][49m[39m [################################################################################################..] 8Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+
+
+7[0;30r8[1A[J[33m
+0% [Working][0m
+            
+Get:1 https://deb.nodesource.com/node_20.x nodistro InRelease [12.1 kB]
+[33m
+0% [1 InRelease 4923 B/12.1 kB 41%] [Connecting to archive.ubuntu.com (91.189.91.82)] [Waiting for headers][0m[33m
+                                                                                                           
+0% [Connecting to archive.ubuntu.com (91.189.91.82)] [Waiting for headers][0m
+                                                                          
+Hit:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+[33m
+                                                                          
+0% [Connecting to archive.ubuntu.com (91.189.91.82)][0m[33m
+                                                    
+0% [Waiting for headers][0m
+                        
+Get:3 https://deb.nodesource.com/node_20.x nodistro/main amd64 Packages [13.8 kB]
+[33m
+0% [3 Packages 4841 B/13.8 kB 35%] [Waiting for headers][0m[33m
+                                                        
+0% [Waiting for headers][0m[33m
+0% [3 Packages store 0 B] [Waiting for headers][0m[33m
+                                               
+0% [Waiting for headers][0m
+                        
+Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease
+[33m
+                        
+0% [Working][0m[33m
+0% [Waiting for headers][0m
+                        
+Hit:5 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+[33m
+                        
+0% [Working][0m[33m
+0% [Waiting for headers][0m
+                        
+Hit:6 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+[33m
+                        
+0% [Working][0m[33m
+0% [Working][0m[33m
+100% [Working][0m
+              
+Fetched 26.0 kB in 1s (48.4 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 62%
+
+Reading package lists... 62%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 85%
+
+Reading package lists... 85%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 2%
+
+Reading state information... Done
+
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[1;34m2026-02-15 11:29:10 - Repository configured successfully.[0m
+[38;5;79m2026-02-15 11:29:10 - To install Node.js, run: apt install nodejs -y[0m
+[38;5;79m2026-02-15 11:29:10 - You can use N|solid Runtime as a node.js alternative[0m
+[1;32m2026-02-15 11:29:10 - To install N|solid Runtime, run: apt install nsolid -y 
+[0m
+[?2004h]0;root@993fa8772e57: /root@993fa8772e57:/# [K[7mapt install -y nodejs[27mapt install -y nodejs
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 4%
+
+Reading package lists... 4%
+
+Reading package lists... 54%
+
+Reading package lists... 54%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 56%
+
+Reading package lists... 56%
+
+Reading package lists... 62%
+
+Reading package lists... 62%
+
+Reading package lists... 69%
+
+Reading package lists... 69%
+
+Reading package lists... 79%
+
+Reading package lists... 79%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 80%
+
+Reading package lists... 85%
+
+Reading package lists... 85%
+
+Reading package lists... 89%
+
+Reading package lists... 89%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 2%
+
+Reading state information... Done
+
+The following additional packages will be installed:
+  libexpat1 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib media-types netbase python3 python3-minimal
+  python3.12 python3.12-minimal tzdata
+Suggested packages:
+  python3-doc python3-tk python3-venv python3.12-venv python3.12-doc binutils binfmt-support
+The following NEW packages will be installed:
+  libexpat1 libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib media-types netbase nodejs python3
+  python3-minimal python3.12 python3.12-minimal tzdata
+0 upgraded, 12 newly installed, 0 to remove and 3 not upgraded.
+Need to get 38.3 MB of archives.
+After this operation, 222 MB of additional disk space will be used.
+[33m
+0% [Working][0m
+            
+Get:1 https://deb.nodesource.com/node_20.x nodistro/main amd64 nodejs amd64 20.20.0-1nodesource1 [32.0 MB]
+[33m
+0% [Connecting to archive.ubuntu.com (91.189.91.81)] [1 nodejs 4107 B/32.0 MB 0%][0m[33m
+                                                                                 
+18% [Waiting for headers] [1 nodejs 8648 kB/32.0 MB 27%][0m[33m
+37% [Waiting for headers] [1 nodejs 17.6 MB/32.0 MB 55%][0m
+                                                        
+Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-minimal amd64 3.12.3-1ubuntu0.11 [837 kB]
+[33m
+39% [2 libpython3.12-minimal 7008 B/837 kB 1%] [1 nodejs 18.7 MB/32.0 MB 59%][0m[33m
+57% [2 libpython3.12-minimal 31.8 kB/837 kB 4%] [1 nodejs 27.4 MB/32.0 MB 86%][0m[33m
+                                                                              
+69% [2 libpython3.12-minimal 82.9 kB/837 kB 10%][0m[33m
+                                                
+69% [2 libpython3.12-minimal 127 kB/837 kB 15%][0m[33m
+69% [2 libpython3.12-minimal 194 kB/837 kB 23%][0m[33m
+69% [2 libpython3.12-minimal 305 kB/837 kB 36%][0m[33m
+69% [2 libpython3.12-minimal 390 kB/837 kB 47%][0m[33m
+69% [2 libpython3.12-minimal 463 kB/837 kB 55%][0m[33m
+69% [2 libpython3.12-minimal 463 kB/837 kB 55%][0m[33m
+70% [2 libpython3.12-minimal 573 kB/837 kB 69%][0m[33m
+70% [2 libpython3.12-minimal 591 kB/837 kB 71%][0m[33m
+70% [2 libpython3.12-minimal 682 kB/837 kB 81%]                                                            5079 kB/s 1s[0m[33m
+70% [2 libpython3.12-minimal 743 kB/837 kB 89%]                                                            5079 kB/s 1s[0m[33m
+70% [2 libpython3.12-minimal 804 kB/837 kB 96%]                                                            5079 kB/s 1s[0m[33m
+72% [Working]                                                                                              5079 kB/s 1s[0m
+                                                                                                                       
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libexpat1 amd64 2.6.1-2ubuntu0.3 [88.0 kB]
+[33m
+72% [3 libexpat1 2629 B/88.0 kB 3%]                                                                        5079 kB/s 1s[0m[33m
+72% [3 libexpat1 50.8 kB/88.0 kB 58%]                                                                      5079 kB/s 1s[0m[33m
+72% [3 libexpat1 50.8 kB/88.0 kB 58%]                                                                      5079 kB/s 1s[0m[33m
+74% [Waiting for headers]                                                                                  5079 kB/s 1s[0m
+                                                                                                                       
+Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12-minimal amd64 3.12.3-1ubuntu0.11 [2342 kB]
+[33m
+74% [4 python3.12-minimal 8027 B/2342 kB 0%]                                                               5079 kB/s 1s[0m[33m
+74% [4 python3.12-minimal 105 kB/2342 kB 4%]                                                               5079 kB/s 1s[0m[33m
+74% [4 python3.12-minimal 198 kB/2342 kB 8%]                                                               5079 kB/s 1s[0m[33m
+74% [4 python3.12-minimal 256 kB/2342 kB 11%]                                                              5079 kB/s 1s[0m[33m
+74% [4 python3.12-minimal 300 kB/2342 kB 13%]                                                              5079 kB/s 1s[0m[33m
+74% [4 python3.12-minimal 327 kB/2342 kB 14%]                                                              5079 kB/s 1s[0m[33m
+74% [4 python3.12-minimal 405 kB/2342 kB 17%]                                                              5079 kB/s 0s[0m[33m
+75% [4 python3.12-minimal 464 kB/2342 kB 20%]                                                              110 kB/s 45s[0m[33m
+75% [4 python3.12-minimal 484 kB/2342 kB 21%]                                                              110 kB/s 45s[0m[33m
+75% [4 python3.12-minimal 551 kB/2342 kB 24%]                                                              110 kB/s 44s[0m[33m
+75% [4 python3.12-minimal 621 kB/2342 kB 27%]                                                              110 kB/s 43s[0m[33m
+75% [4 python3.12-minimal 674 kB/2342 kB 29%]                                                              110 kB/s 43s[0m[33m
+75% [4 python3.12-minimal 713 kB/2342 kB 30%]                                                              110 kB/s 43s[0m[33m
+75% [4 python3.12-minimal 778 kB/2342 kB 33%]                                                              110 kB/s 42s[0m[33m
+75% [4 python3.12-minimal 781 kB/2342 kB 33%]                                                              110 kB/s 42s[0m[33m
+75% [4 python3.12-minimal 848 kB/2342 kB 36%]                                                              110 kB/s 41s[0m[33m
+75% [4 python3.12-minimal 848 kB/2342 kB 36%]                                                              110 kB/s 41s[0m[33m
+76% [4 python3.12-minimal 927 kB/2342 kB 40%]                                                              110 kB/s 41s[0m[33m
+76% [4 python3.12-minimal 962 kB/2342 kB 41%]                                                              110 kB/s 40s[0m[33m
+76% [4 python3.12-minimal 982 kB/2342 kB 42%]                                                             86.2 kB/s 51s[0m[33m
+76% [4 python3.12-minimal 1024 kB/2342 kB 44%]                                                            86.2 kB/s 51s[0m[33m
+76% [4 python3.12-minimal 1024 kB/2342 kB 44%]                                                            86.2 kB/s 51s[0m[33m
+76% [4 python3.12-minimal 1096 kB/2342 kB 47%]                                                            86.2 kB/s 50s[0m[33m
+76% [4 python3.12-minimal 1096 kB/2342 kB 47%]                                                            86.2 kB/s 50s[0m[33m
+76% [4 python3.12-minimal 1131 kB/2342 kB 48%]                                                            86.2 kB/s 49s[0m[33m
+76% [4 python3.12-minimal 1169 kB/2342 kB 50%]                                                            86.2 kB/s 49s[0m[33m
+76% [4 python3.12-minimal 1205 kB/2342 kB 51%]                                                            86.2 kB/s 49s[0m[33m
+76% [4 python3.12-minimal 1246 kB/2342 kB 53%]                                                            86.2 kB/s 48s[0m[33m
+76% [4 python3.12-minimal 1246 kB/2342 kB 53%]                                                            86.2 kB/s 48s[0m[33m
+76% [4 python3.12-minimal 1341 kB/2342 kB 57%]                                                            86.2 kB/s 47s[0m[33m
+77% [4 python3.12-minimal 1368 kB/2342 kB 58%]                                                            86.2 kB/s 47s[0m[33m
+77% [4 python3.12-minimal 1404 kB/2342 kB 60%]                                                            70.0 kB/s 57s[0m[33m
+77% [4 python3.12-minimal 1404 kB/2342 kB 60%]                                                            70.0 kB/s 57s[0m[33m
+77% [4 python3.12-minimal 1484 kB/2342 kB 63%]                                                            70.0 kB/s 56s[0m[33m
+77% [4 python3.12-minimal 1550 kB/2342 kB 66%]                                                            70.0 kB/s 55s[0m[33m
+77% [4 python3.12-minimal 1613 kB/2342 kB 69%]                                                            70.0 kB/s 54s[0m[33m
+77% [4 python3.12-minimal 1667 kB/2342 kB 71%]                                                            70.0 kB/s 53s[0m[33m
+77% [4 python3.12-minimal 1667 kB/2342 kB 71%]                                                            70.0 kB/s 53s[0m[33m
+77% [4 python3.12-minimal 1750 kB/2342 kB 75%]                                                            70.0 kB/s 52s[0m[33m
+77% [4 python3.12-minimal 1792 kB/2342 kB 77%]                                                            70.0 kB/s 52s[0m[33m
+77% [4 python3.12-minimal 1826 kB/2342 kB 78%]                                                            70.0 kB/s 51s[0m[33m
+78% [4 python3.12-minimal 1865 kB/2342 kB 80%]                                                            70.0 kB/s 51s[0m[33m
+78% [4 python3.12-minimal 1865 kB/2342 kB 80%]                                                            70.0 kB/s 51s[0m[33m
+78% [4 python3.12-minimal 1927 kB/2342 kB 82%]                                                            86.7 kB/s 40s[0m[33m
+78% [4 python3.12-minimal 1962 kB/2342 kB 84%]                                                            86.7 kB/s 40s[0m[33m
+78% [4 python3.12-minimal 2000 kB/2342 kB 85%]                                                            86.7 kB/s 39s[0m[33m
+78% [4 python3.12-minimal 2044 kB/2342 kB 87%]                                                            86.7 kB/s 39s[0m[33m
+78% [4 python3.12-minimal 2044 kB/2342 kB 87%]                                                            86.7 kB/s 39s[0m[33m
+78% [4 python3.12-minimal 2089 kB/2342 kB 89%]                                                            86.7 kB/s 38s[0m[33m
+78% [4 python3.12-minimal 2130 kB/2342 kB 91%]                                                            86.7 kB/s 38s[0m[33m
+78% [4 python3.12-minimal 2163 kB/2342 kB 92%]                                                            86.7 kB/s 37s[0m[33m
+78% [4 python3.12-minimal 2198 kB/2342 kB 94%]                                                            86.7 kB/s 37s[0m[33m
+78% [4 python3.12-minimal 2219 kB/2342 kB 95%]                                                            86.7 kB/s 37s[0m[33m
+78% [4 python3.12-minimal 2287 kB/2342 kB 98%]                                                            86.7 kB/s 36s[0m[33m
+79% [4 python3.12-minimal 2327 kB/2342 kB 99%]                                                            86.7 kB/s 35s[0m[33m
+80% [Waiting for headers]                                                                                 86.7 kB/s 35s[0m
+                                                                                                                       
+Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-minimal amd64 3.12.3-0ubuntu2.1 [27.4 kB]
+[33m
+80% [5 python3-minimal 10.2 kB/27.4 kB 37%]                                                               86.7 kB/s 35s[0m[33m
+80% [5 python3-minimal 18.7 kB/27.4 kB 68%]                                                               67.1 kB/s 45s[0m[33m
+82% [Waiting for headers]                                                                                 67.1 kB/s 45s[0m
+                                                                                                                       
+Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 media-types all 10.1.0 [27.5 kB]
+[33m
+82% [6 media-types 904 B/27.5 kB 3%]                                                                      67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+82% [6 media-types 14.3 kB/27.5 kB 52%]                                                                   67.1 kB/s 45s[0m[33m
+84% [Waiting for headers]                                                                                 67.1 kB/s 45s[0m
+                                                                                                                       
+Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 netbase all 6.4 [13.1 kB]
+[33m
+84% [7 netbase 760 B/13.1 kB 6%]                                                                          67.1 kB/s 45s[0m[33m
+84% [7 netbase 8192 B/13.1 kB 62%]                                                                     7154 B/s 7min 3s[0m[33m
+85% [Waiting for headers]                                                                              7154 B/s 7min 3s[0m
+                                                                                                                       
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 tzdata all 2025b-0ubuntu0.24.04.1 [276 kB]
+[33m
+85% [8 tzdata 4728 B/276 kB 2%]                                                                        7154 B/s 7min 2s[0m[33m
+85% [8 tzdata 35.7 kB/276 kB 13%]                                                                     7154 B/s 6min 58s[0m[33m
+85% [8 tzdata 66.1 kB/276 kB 24%]                                                                     7154 B/s 6min 54s[0m[33m
+86% [8 tzdata 93.8 kB/276 kB 34%]                                                                     7154 B/s 6min 50s[0m[33m
+86% [8 tzdata 122 kB/276 kB 44%]                                                                      7154 B/s 6min 46s[0m[33m
+86% [8 tzdata 158 kB/276 kB 57%]                                                                      7154 B/s 6min 41s[0m[33m
+86% [8 tzdata 158 kB/276 kB 57%]                                                                      7154 B/s 6min 41s[0m[33m
+86% [8 tzdata 167 kB/276 kB 61%]                                                                      7154 B/s 6min 39s[0m[33m
+86% [8 tzdata 200 kB/276 kB 73%]                                                                      7154 B/s 6min 35s[0m[33m
+86% [8 tzdata 241 kB/276 kB 88%]                                                                      7154 B/s 6min 29s[0m[33m
+86% [8 tzdata 262 kB/276 kB 95%]                                                                      7154 B/s 6min 26s[0m[33m
+86% [8 tzdata 262 kB/276 kB 95%]                                                                      7154 B/s 6min 26s[0m[33m
+86% [8 tzdata 266 kB/276 kB 97%]                                                                      41.8 kB/s 1min 6s[0m
+                                                                                                                       
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3.12-stdlib amd64 3.12.3-1ubuntu0.11 [2069 kB]
+[33m
+88% [9 libpython3.12-stdlib 2864 B/2069 kB 0%]                                                        41.8 kB/s 1min 5s[0m[33m
+88% [9 libpython3.12-stdlib 38.3 kB/2069 kB 2%]                                                       41.8 kB/s 1min 4s[0m[33m
+88% [9 libpython3.12-stdlib 55.8 kB/2069 kB 3%]                                                       41.8 kB/s 1min 4s[0m[33m
+88% [9 libpython3.12-stdlib 55.8 kB/2069 kB 3%]                                                       41.8 kB/s 1min 4s[0m[33m
+88% [9 libpython3.12-stdlib 103 kB/2069 kB 5%]                                                        41.8 kB/s 1min 3s[0m[33m
+88% [9 libpython3.12-stdlib 104 kB/2069 kB 5%]                                                        41.8 kB/s 1min 3s[0m[33m
+88% [9 libpython3.12-stdlib 104 kB/2069 kB 5%]                                                        41.8 kB/s 1min 3s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        41.8 kB/s 1min 3s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        41.8 kB/s 1min 3s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        41.8 kB/s 1min 3s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        41.8 kB/s 1min 3s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        41.8 kB/s 1min 3s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        20.9 kB/s 2min 6s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        20.9 kB/s 2min 6s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        20.9 kB/s 2min 6s[0m[33m
+88% [9 libpython3.12-stdlib 120 kB/2069 kB 6%]                                                        20.9 kB/s 2min 6s[0m[33m
+88% [9 libpython3.12-stdlib 250 kB/2069 kB 12%]                                                      20.9 kB/s 1min 59s[0m[33m
+88% [9 libpython3.12-stdlib 336 kB/2069 kB 16%]                                                      20.9 kB/s 1min 55s[0m[33m
+89% [9 libpython3.12-stdlib 473 kB/2069 kB 23%]                                                      20.9 kB/s 1min 49s[0m[33m
+89% [9 libpython3.12-stdlib 713 kB/2069 kB 34%]                                                      20.9 kB/s 1min 37s[0m[33m
+90% [9 libpython3.12-stdlib 1165 kB/2069 kB 56%]                                                     20.9 kB/s 1min 16s[0m[33m
+92% [9 libpython3.12-stdlib 2044 kB/2069 kB 99%]                                                          20.9 kB/s 33s[0m[33m
+94% [Waiting for headers]                                                                                 20.9 kB/s 32s[0m
+                                                                                                                       
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3.12 amd64 3.12.3-1ubuntu0.11 [651 kB]
+[33m
+94% [10 python3.12 13.5 kB/651 kB 2%]                                                                     20.9 kB/s 32s[0m[33m
+97% [Waiting for headers]                                                                                  20.9 kB/s 1s[0m
+                                                                                                                       
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libpython3-stdlib amd64 3.12.3-0ubuntu2.1 [10.1 kB]
+[33m
+97% [11 libpython3-stdlib 4860 B/10.1 kB 48%]                                                              20.9 kB/s 1s[0m[33m
+98% [Waiting for headers]                                                                                  20.9 kB/s 1s[0m
+                                                                                                                       
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 python3 amd64 3.12.3-0ubuntu2.1 [23.0 kB]
+[33m
+98% [12 python3 3250 B/23.0 kB 14%]                                                                        20.9 kB/s 0s[0m[33m
+100% [Working]                                                                                             20.9 kB/s 0s[0m
+                                                                                                                       
+Fetched 38.3 MB in 1min 1s (628 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1ASelecting previously unselected package libpython3.12-minimal:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5369 files and directories currently installed.)
+Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.11_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [  2%][49m[39m [##................................................................................................] 8Unpacking libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.11) ...
+7[30;0f[42m[30mProgress: [  4%][49m[39m [####..............................................................................................] 8Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.6.1-2ubuntu0.3_amd64.deb ...
+7[30;0f[42m[30mProgress: [  6%][49m[39m [######............................................................................................] 8Unpacking libexpat1:amd64 (2.6.1-2ubuntu0.3) ...
+7[30;0f[42m[30mProgress: [  8%][49m[39m [########..........................................................................................] 8Selecting previously unselected package python3.12-minimal.
+Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.11_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 10%][49m[39m [##########........................................................................................] 8Unpacking python3.12-minimal (3.12.3-1ubuntu0.11) ...
+7[30;0f[42m[30mProgress: [ 12%][49m[39m [############......................................................................................] 8Setting up libpython3.12-minimal:amd64 (3.12.3-1ubuntu0.11) ...
+7[30;0f[42m[30mProgress: [ 14%][49m[39m [#############.....................................................................................] 87[30;0f[42m[30mProgress: [ 16%][49m[39m [################..................................................................................] 8Setting up libexpat1:amd64 (2.6.1-2ubuntu0.3) ...
+7[30;0f[42m[30mProgress: [ 18%][49m[39m [##################................................................................................] 87[30;0f[42m[30mProgress: [ 20%][49m[39m [####################..............................................................................] 8Setting up python3.12-minimal (3.12.3-1ubuntu0.11) ...
+7[30;0f[42m[30mProgress: [ 22%][49m[39m [######################............................................................................] 87[30;0f[42m[30mProgress: [ 24%][49m[39m [########################..........................................................................] 8Selecting previously unselected package python3-minimal.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5688 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 27%][49m[39m [##########################........................................................................] 8Unpacking python3-minimal (3.12.3-0ubuntu2.1) ...
+7[30;0f[42m[30mProgress: [ 29%][49m[39m [###########################.......................................................................] 8Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+7[30;0f[42m[30mProgress: [ 31%][49m[39m [##############################....................................................................] 8Unpacking media-types (10.1.0) ...
+7[30;0f[42m[30mProgress: [ 33%][49m[39m [################################..................................................................] 8Selecting previously unselected package netbase.
+Preparing to unpack .../2-netbase_6.4_all.deb ...
+7[30;0f[42m[30mProgress: [ 35%][49m[39m [##################################................................................................] 8Unpacking netbase (6.4) ...
+7[30;0f[42m[30mProgress: [ 37%][49m[39m [####################################..............................................................] 8Selecting previously unselected package tzdata.
+Preparing to unpack .../3-tzdata_2025b-0ubuntu0.24.04.1_all.deb ...
+7[30;0f[42m[30mProgress: [ 39%][49m[39m [######################################............................................................] 8Unpacking tzdata (2025b-0ubuntu0.24.04.1) ...
+7[30;0f[42m[30mProgress: [ 41%][49m[39m [########################################..........................................................] 8Selecting previously unselected package libpython3.12-stdlib:amd64.
+Preparing to unpack .../4-libpython3.12-stdlib_3.12.3-1ubuntu0.11_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 43%][49m[39m [##########################################........................................................] 8Unpacking libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.11) ...
+7[30;0f[42m[30mProgress: [ 45%][49m[39m [############################################......................................................] 8Selecting previously unselected package python3.12.
+Preparing to unpack .../5-python3.12_3.12.3-1ubuntu0.11_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 47%][49m[39m [##############################################....................................................] 8Unpacking python3.12 (3.12.3-1ubuntu0.11) ...
+7[30;0f[42m[30mProgress: [ 49%][49m[39m [################################################..................................................] 8Selecting previously unselected package libpython3-stdlib:amd64.
+Preparing to unpack .../6-libpython3-stdlib_3.12.3-0ubuntu2.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 51%][49m[39m [##################################################................................................] 8Unpacking libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+7[30;0f[42m[30mProgress: [ 53%][49m[39m [####################################################..............................................] 8Setting up python3-minimal (3.12.3-0ubuntu2.1) ...
+7[30;0f[42m[30mProgress: [ 55%][49m[39m [#####################################################.............................................] 87[30;0f[42m[30mProgress: [ 57%][49m[39m [#######################################################...........................................] 8Selecting previously unselected package python3.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 6658 files and directories currently installed.)
+Preparing to unpack .../python3_3.12.3-0ubuntu2.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 59%][49m[39m [##########################################################........................................] 8Unpacking python3 (3.12.3-0ubuntu2.1) ...
+7[30;0f[42m[30mProgress: [ 61%][49m[39m [############################################################......................................] 8Selecting previously unselected package nodejs.
+Preparing to unpack .../nodejs_20.20.0-1nodesource1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 63%][49m[39m [##############################################################....................................] 8Unpacking nodejs (20.20.0-1nodesource1) ...
+7[30;0f[42m[30mProgress: [ 65%][49m[39m [################################################################..................................] 8Setting up media-types (10.1.0) ...
+7[30;0f[42m[30mProgress: [ 67%][49m[39m [##################################################################................................] 87[30;0f[42m[30mProgress: [ 69%][49m[39m [####################################################################..............................] 8Setting up tzdata (2025b-0ubuntu0.24.04.1) ...
+7[30;0f[42m[30mProgress: [ 71%][49m[39m [######################################################################............................] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 79.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.38.2 /usr/local/share/perl/5.38.2 /usr/lib/x86_64-linux-gnu/perl5/5.38 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.38 /usr/share/perl/5.38 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8.)
+debconf: falling back to frontend: Teletype
+Configuring tzdata
+------------------
+
+Please select the geographic area in which you live. Subsequent configuration questions will narrow this down by
+presenting a list of cities, representing the time zones in which they are located.
+
+  1. Africa   3. Antarctica  5. Asia      7. Australia  9. Indian    11. Etc
+  2. America  4. Arctic      6. Atlantic  8. Europe     10. Pacific  12. Legacy
+Geographic area: ^[[B^[[A        Europe
+
+Please select the city or region corresponding to your time zone.
+
+  1. Amsterdam   10. Bucharest   19. Isle_of_Man  28. Luxembourg  37. Paris       46. Simferopol  55. Vatican
+  2. Andorra     11. Budapest    20. Istanbul     29. Madrid      38. Podgorica   47. Skopje      56. Vienna
+  3. Astrakhan   12. Busingen    21. Jersey       30. Malta       39. Prague      48. Sofia       57. Vilnius
+  4. Athens      13. Chisinau    22. Kaliningrad  31. Mariehamn   40. Riga        49. Stockholm   58. Volgograd
+  5. Belfast     14. Copenhagen  23. Kirov        32. Minsk       41. Rome        50. Tallinn     59. Warsaw
+  6. Belgrade    15. Dublin      24. Kyiv         33. Monaco      42. Samara      51. Tirane      60. Zagreb
+  7. Berlin      16. Gibraltar   25. Lisbon       34. Moscow      43. San_Marino  52. Tiraspol    61. Zurich
+  8. Bratislava  17. Guernsey    26. Ljubljana    35. Nicosia     44. Sarajevo    53. Ulyanovsk
+  9. Brussels    18. Helsinki    27. London       36. Oslo        45. Saratov     54. Vaduz
+Time zone: Helsinki
+
+
+Current default time zone: 'Europe/Helsinki'
+Local time is now:      Sun Feb 15 13:30:53 EET 2026.
+Universal Time is now:  Sun Feb 15 11:30:53 UTC 2026.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+7[30;0f[42m[30mProgress: [ 73%][49m[39m [########################################################################..........................] 8Setting up netbase (6.4) ...
+7[30;0f[42m[30mProgress: [ 76%][49m[39m [#########################################################################.........................] 87[30;0f[42m[30mProgress: [ 78%][49m[39m [############################################################################......................] 8Setting up libpython3.12-stdlib:amd64 (3.12.3-1ubuntu0.11) ...
+7[30;0f[42m[30mProgress: [ 80%][49m[39m [##############################################################################....................] 87[30;0f[42m[30mProgress: [ 82%][49m[39m [################################################################################..................] 8Setting up python3.12 (3.12.3-1ubuntu0.11) ...
+7[30;0f[42m[30mProgress: [ 84%][49m[39m [##################################################################################................] 87[30;0f[42m[30mProgress: [ 86%][49m[39m [####################################################################################..............] 8Setting up libpython3-stdlib:amd64 (3.12.3-0ubuntu2.1) ...
+7[30;0f[42m[30mProgress: [ 88%][49m[39m [######################################################################################............] 87[30;0f[42m[30mProgress: [ 90%][49m[39m [########################################################################################..........] 8Setting up python3 (3.12.3-0ubuntu2.1) ...
+7[30;0f[42m[30mProgress: [ 92%][49m[39m [##########################################################################################........] 8running python rtupdate hooks for python3.12...
+running python post-rtupdate hooks for python3.12...
+7[30;0f[42m[30mProgress: [ 94%][49m[39m [############################################################################################......] 8Setting up nodejs (20.20.0-1nodesource1) ...
+7[30;0f[42m[30mProgress: [ 96%][49m[39m [#############################################################################################.....] 87[30;0f[42m[30mProgress: [ 98%][49m[39m [################################################################################################..] 8Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+
+7[0;30r8[1A[J[?2004h]0;root@993fa8772e57: /root@993fa8772e57:/# noded  e /usr/src/app/index.js
+[?2004l
+Hello World
+[?2004h]0;root@993fa8772e57: /root@993fa8772e57:/# [Kexit
+[?2004l
+exit
+[?2004h]0;aalo@Roderick: ~/projects/part12-containers-applications[01;32maalo@Roderick[00m:[01;34m~/projects/part12-containers-applications[00m$ r[Kexit
+[?2004l
+exit
+
+Script done on 2026-02-15 13:31:26+02:00 [COMMAND_EXIT_CODE="0"]
