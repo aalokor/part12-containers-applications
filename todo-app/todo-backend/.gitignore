@@ -61,3 +61,4 @@ typings/
 .next
 
 .prettierrc
+redis_data/
