@@ -40,7 +40,9 @@ singleRouter.get('/', async (req, res) => {
 
 /* PUT todo. */
 singleRouter.put('/', async (req, res) => {
-  res.sendStatus(405); // Implement this
+  req.todo.done = true;
+  await req.todo.save();
+  res.json(req.todo);
 });
 
 router.use('/:id', findByIdMiddleware, singleRouter);
